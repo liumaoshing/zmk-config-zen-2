@@ -37,7 +37,7 @@
                         bindings = <
   &kp TAB   &none     &none     &none           &none    &none     &kp MINUS    &kp NUMBER_7 &kp NUMBER_8 &kp NUMBER_9 &kp NUMBER_0 &kp BACKSPACE 
   &none     &kp EXCL  &kp AT    &kp HASH        &kp DLLR &kp PRCNT &kp KP_DOT   &kp NUMBER_4 &kp NUMBER_5 &kp NUMBER_6 &kp KP_PLUS  &kp DEL 
-  &kp LSHFT &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR  &kp NUMBER_0 &kp null     &kp NUMBER_2 &kp NUMBER_3 &trans       &trans 
+  &kp LSHFT &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR  &kp NUMBER_0 &kp NUMBER_1 &kp NUMBER_2 &kp NUMBER_3 &trans       &trans 
                                        &trans &trans &kp RETURN                 &kp BACKSPACE &trans &trans 
                         >;
                 };

@@ -8,7 +8,20 @@
     //zmk,matrix_transform = &five_column_transform;
   };
 };
-  
+
+/ {
+    macros {
+        zed_em_kay: pdf {
+            label = "ZM_pdf";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp N &kp Y &kp O &kp N2 &kp N1 &kp N9>
+                ;
+        };
+    };
+};
+
 / {
         keymap {
                 compatible = "zmk,keymap";

@@ -31,12 +31,12 @@
                         label = "LOWER";
 // -----------------------------------------------------------------------------------------
 // |  TAB |     |     |     |     |     |   |  -  |  7  |  8  |  9  |  +  | BKSP |
-// |      |  !  |  @  |  #  |  $  |  %  |   |  .  |  4  |  5  |  6  |  =  | DEL  |
+// | CTRL |  !  |  @  |  #  |  $  |  %  |   |  .  |  4  |  5  |  6  |  =  | DEL  |
 // | SHFT |  ^  |  &  |  *  |  (  |  )  |   |  0  |  1  |  2  |  3  |     |      |
-//                    |     |     | ENT |   |BKSP |     |     |
+//                    | ALT |     | ENT |   |BKSP |     | CTRL |
                         bindings = <
   &kp TAB   &none     &none     &none           &none    &none     &kp MINUS    &kp NUMBER_7 &kp NUMBER_8 &kp NUMBER_9 &kp KP_PLUS  &kp BACKSPACE 
-  &none     &kp EXCL  &kp AT    &kp HASH        &kp DLLR &kp PRCNT &kp KP_DOT   &kp NUMBER_4 &kp NUMBER_5 &kp NUMBER_6 &kp KP_PLUS  &kp DEL 
+  &trans    &kp EXCL  &kp AT    &kp HASH        &kp DLLR &kp PRCNT &kp KP_DOT   &kp NUMBER_4 &kp NUMBER_5 &kp NUMBER_6 &kp KP_PLUS  &kp DEL 
   &kp LSHFT &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR  &kp NUMBER_0 &kp NUMBER_1 &kp NUMBER_2 &kp NUMBER_3 &trans       &trans 
                                        &trans &trans &kp RETURN                 &kp BACKSPACE &trans &trans 
                         >;
@@ -45,8 +45,8 @@
                 raise_layer {
                         label = "RAISE";
 // -----------------------------------------------------------------------------------------
-// |      |     |     |  UP  |     |     |   |     |     |     |     |     |       |
-// |      |     | LFT | DOWN | RGT |     |   | BT1 | BT2 | BT3 | BT4 | BT5 | BTCLR |
+// |  ~   |     |     |  UP  |     |     |   |     |     |     |     |     |       |
+// | CAPS |     | LFT | DOWN | RGT |     |   | BT1 | BT2 | BT3 | BT4 | BT5 | BTCLR |
 // |  F1  | F2  | F3  |  F4  | F5  | F6  |   | F7  | F8  | F9  | F10 | F11 |  F12  |
 //                    | ALT  |     | SPC |   | SPC |     |     |
                         bindings = <

@@ -16,7 +16,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                =<&macro_press &kp LSHFT>
+                = <&macro_press &kp LSHFT>
                , <&macro_tap &kp N &kp Y &kp O>
                , <&macro_release &kp LSHFT> 
                , <&macro_tap &kp N2 &kp N1 &kp N9>
@@ -32,7 +32,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                =<&macro_tap &kp AT &kp a &kp f &kp a &kp x &kp DOT &kp p &kp f &kp i &kp z &kp e &kp r &kp DOT &kp c &kp o &kp m>
+                = <&macro_tap &kp AT &kp a &kp f &kp a &kp x &kp DOT &kp p &kp f &kp i &kp z &kp e &kp r &kp DOT &kp c &kp o &kp m>
                 ;
         };
     };

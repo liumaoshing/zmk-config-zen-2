@@ -11,7 +11,7 @@
 
 / {
     macros {
-        zed_em_kay: pdf {
+        pdf: pdf {
             label = "ZM_pdf";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;

@@ -8,17 +8,6 @@
     //zmk,matrix_transform = &five_column_transform;
   };
 };
-
-macros {
-        ZMK_MACRO(fax,
-            wait-ms = <10>;
-            tap-ms = <10>;
-            bindings
-                = <&macro_tap &kp AT &kp a &kp f &kp a &kp x &kp DOT &kp p &kp f &kp i &kp z &kp e &kp r &kp DOT &kp c &kp o &kp m>;
-        )
-    };
-
-/ {
         keymap {
                 compatible = "zmk,keymap";
 
@@ -39,13 +28,13 @@ macros {
                 lower_layer {
                         label = "LOWER";
 // -----------------------------------------------------------------------------------------
-// |  TAB | fax |     |     |     | pdf |   |  -  |  7  |  8  |  9  |  +  | BKSP |
-// | CTRL |  !  |  @  |  #  |  $  |  %  |   |  .  |  4  |  5  |  6  |  :  | DEL  |
+// |  TAB |     |     |     |     |     |   |  -  |  7  |  8  |  9  |  +  | BKSP |
+// | CTRL |  !  |  @  |  #  |  $  |  %  |   |  .  |  4  |  5  |  6  |  =  | DEL  |
 // | SHFT |  ^  |  &  |  *  |  (  |  )  |   |  0  |  1  |  2  |  3  |     |      |
 //                    | ALT |     | ENT |   |BKSP |     | CTRL |
                         bindings = <
   &kp TAB   &fax      &none     &none           &none    &none     &kp MINUS    &kp NUMBER_7 &kp NUMBER_8 &kp NUMBER_9 &kp KP_PLUS  &kp BACKSPACE 
-  &trans    &kp EXCL  &kp AT    &kp HASH        &kp DLLR &kp PRCNT &kp KP_DOT   &kp NUMBER_4 &kp NUMBER_5 &kp NUMBER_6 &kp COLON    &kp DEL 
+  &trans    &kp EXCL  &kp AT    &kp HASH        &kp DLLR &kp PRCNT &kp KP_DOT   &kp NUMBER_4 &kp NUMBER_5 &kp NUMBER_6 &kp EQUAL    &kp DEL 
   &kp LSHFT &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR  &kp NUMBER_0 &kp NUMBER_1 &kp NUMBER_2 &kp NUMBER_3 &trans       &trans 
                                        &trans &trans &kp RETURN                 &kp BACKSPACE &trans &trans 
                         >;
